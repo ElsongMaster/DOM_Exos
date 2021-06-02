@@ -6,12 +6,8 @@ h1.addEventListener("dblclick", () => {
 });
 
 let h3 = document.querySelector("h3");
-let i = h3.textContent.length;
 h3.addEventListener("mouseover", () => {
-  if (i >= 0) {
-    h3.textContent = h3.textContent.substr(0, i);
-    i--;
-  }
+  h3.textContent = h3.textContent.substr(0, h3.textContent.length - 1);
 });
 
 let p = document.querySelector("p");
